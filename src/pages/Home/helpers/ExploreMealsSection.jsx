@@ -3,7 +3,9 @@ import MealImg from "./../../../assets/meal.svg";
 import Button from "./../../../components/Buttons/Button";
 import Headline from "../../../components/Headlines/Headline";
 import SubHeadline from "../../../components/Headlines/SubHeadline";
+import { useNavigate } from "react-router-dom";
 const ExploreMealsSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="py-[7.125rem] bg-primary flex justify-center items-center h-screen relative px-4">
       <img
@@ -18,7 +20,9 @@ const ExploreMealsSection = () => {
         <SubHeadline className="text-seconday">
           Discover a World of Flavor with Every Bite
         </SubHeadline>
-        <Button className={"mt-[2.125rem]"}>Explore Meals</Button>
+        <Button className={"mt-[2.125rem]"} onClick={() => navigate("/meals")}>
+          Explore Meals
+        </Button>
       </div>
     </div>
   );
