@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function useApiData() {
+function useApiData(value) {
   const [state, setState] = useState({
     data: [],
     loading: true,
