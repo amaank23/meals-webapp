@@ -39,7 +39,7 @@ const Sidebar = ({ open, close }) => {
           to={"/favourites"}
           onClick={close}
         >
-          Favourites
+          Favourites Meals
         </Link>
       </div>
     </Drawer>

@@ -19,7 +19,7 @@ const MealsList = ({ title }) => {
   }, []);
   return (
     <Spinner loading={meals.loading}>
-      <div className="mt-[8.75rem] px-4 grid grid-cols-3">
+      <div className="mt-[8.75rem] px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {meals.data.length &&
           meals.data.map((item) => (
             <Meal

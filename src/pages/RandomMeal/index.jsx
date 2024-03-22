@@ -20,6 +20,9 @@ const index = () => {
   useEffect(() => {
     toggleLoading.setLoadingToFalse();
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {meal.data.length ? (

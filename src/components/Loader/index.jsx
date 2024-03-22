@@ -1,6 +1,6 @@
 import React from "react";
 import Spinner from "./../../assets/spinner.svg";
-const index = ({ loading, children }) => {
+const index = ({ loading = false, children }) => {
   if (loading) {
     return (
       <div className="flex justify-center h-screen">

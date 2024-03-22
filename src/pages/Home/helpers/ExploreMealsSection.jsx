@@ -20,9 +20,20 @@ const ExploreMealsSection = () => {
         <SubHeadline className="text-seconday">
           Discover a World of Flavor with Every Bite
         </SubHeadline>
-        <Button className={"mt-[2.125rem]"} onClick={() => navigate("/meals")}>
-          Explore Meals
-        </Button>
+        <div className="flex gap-4">
+          <Button
+            className={"mt-[2.125rem]"}
+            onClick={() => navigate("/meals")}
+          >
+            Explore Meals
+          </Button>
+          <Button
+            className={"mt-[2.125rem]"}
+            onClick={() => navigate("/favourites")}
+          >
+            Your Favourite Meals
+          </Button>
+        </div>
       </div>
     </div>
   );
